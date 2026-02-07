@@ -26,14 +26,14 @@ export default defineConfig({
           label: "丽水特色",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "丽水市本级政府投资信息化项目管理办法", slug: "lishui-style/lishui-xinxihua-xiangmu-guanli" },
+            { label: "丽水市本级政府投资信息化项目管理办法", slug: "lishui/lishui-gov-it-project-management-rules" },
           ],
         },
         {
-          label: "行业标准",
+          label: "全国标准",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "商用密码应用安全性评估 FAQ (第三版)", slug: "hangye-biaozhun/shangyong-mima-pinggu-faq-v3" },
+            { label: "政务信息系统密码应用与安全性评估工作指南", slug: "guidelines/government-it-crypto-guidelines" },
           ],
         },
       ],
