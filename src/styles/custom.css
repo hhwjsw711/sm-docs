@@ -1,3 +1,6 @@
+/* Import KaTeX CSS for math formula rendering */
+@import 'katex/dist/katex.min.css';
+
 /* Custom header logo spacing */
 .site-title {
   gap: 0.5rem; /* Gap between logo and title text */
