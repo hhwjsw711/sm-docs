@@ -1,8 +1,14 @@
 ---
 import { Image } from 'astro:assets'
 import chinaTelecomLogo from '../assets/china-telecom-logo.svg'
+import lishuiDataBureauLogo from '../assets/lishui-data-bureau.svg'
 
 const sponsors = [
+  {
+    name: '丽水市数据局',
+    img: lishuiDataBureauLogo,
+    url: 'https://www.lishui.gov.cn/col/col1229497563/index.html?df=/col/col1229497566/index.html',
+  },
   {
     name: '中国电信',
     img: chinaTelecomLogo,
@@ -17,7 +23,7 @@ const sponsors = [
     <a href={sponsor.url} class={sponsor.size ?? ''}>
       <article>
         <h4>{sponsor.name}</h4>
-        <Image height={sponsor.size === 'large' ? 24 : 12} src={sponsor.img} alt={sponsor.name}/>
+        <Image height={sponsor.size === 'large' ? 24 : 140} src={sponsor.img} alt={sponsor.name}/>
       </article>
     </a>
   ))}
