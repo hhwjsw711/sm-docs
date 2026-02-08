@@ -41,11 +41,7 @@ export default defineConfig({
         },
         {
           label: "全国标准",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "政务信息系统密码应用与安全性评估工作指南", slug: "guidelines/government-it-crypto-guidelines" },
-            { label: "商用密码应用安全性评估 FAQ （第三版）", slug: "guidelines/commercial-cryptography-security-assessment-faq" },
-          ],
+          autogenerate: { directory: "guidelines" },
         },
       ],
     }),
