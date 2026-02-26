@@ -35,8 +35,8 @@ export default defineConfig({
           label: "丽水特色",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "丽水市本级政府投资信息化项目管理办法", slug: "lishui/lishui-gov-it-project-management-rules" },
-            { label: "信息系统商用密码应用成本测算指南", slug: "lishui/commercial-crypto-cost-estimation-guide" },
+            { label: "丽水市本级政府投资信息化项目管理办法", slug: "lishui/lishui-government-investment-it-project-management-measures" },
+            { label: "信息系统商用密码应用成本测算指南", slug: "lishui/commercial-crypto-cost-estimation-guide-for-information-systems" },
           ],
         },
         {
