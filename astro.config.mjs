@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 import starlightVideos from "starlight-videos";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import starlightScrollToTop from 'starlight-scroll-to-top';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +15,18 @@ export default defineConfig({
   integrations: [
     starlight({
       favicon: "/favicon.ico",
-      plugins: [starlightVideos()],
+      plugins: [starlightVideos(), starlightScrollToTop({
+        position: 'right',
+        showTooltip: true,
+        smoothScroll: true,
+        threshold: 10,
+        svgPath: 'M12 4L6 10H9V16H15V10H18L12 4M9 16L12 20L15 16',
+        svgStrokeWidth: 2,
+        borderRadius: '20',
+        showProgressRing: true,
+        showOnHomepage: true,
+        tooltipText: '回到顶部',
+      })],
       title: "商密知识库",
       components: {
         TableOfContents: './src/components/TableOfContents.astro',
