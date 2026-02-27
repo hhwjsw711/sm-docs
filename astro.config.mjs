@@ -5,6 +5,7 @@ import starlightVideos from "starlight-videos";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightCoolerCredit from 'starlight-cooler-credit'
 
 // https://astro.build/config
 export default defineConfig({
@@ -26,6 +27,12 @@ export default defineConfig({
         showProgressRing: true,
         showOnHomepage: true,
         tooltipText: '回到顶部',
+      }), starlightCoolerCredit({
+        credit: {
+          title: "商密小助手",
+          href: "https://sm.isllm.com/",
+          description: "商用密码知识速查，法规标准尽在掌握。",
+        },
       })],
       title: "商密知识库",
       components: {
